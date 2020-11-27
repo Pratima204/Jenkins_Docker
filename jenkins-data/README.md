@@ -3,7 +3,7 @@
 
 ### To remote all containers
 ```sh
-docker kill $(docker ps -a | cut -d ' ' -f 1)
+docker kill $(docker ps -a | cut -d ' ' -f 1 | sed 1d)
 ```
 
 ### To remove all images
